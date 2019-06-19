@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CowSearch">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarCowSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:theme="@android:style/Theme.Material"
+        app:barrierDirection="bottom"
+        app:layout_constraintBottom_toTopOf="@+id/cow_search_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="60dp"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/dashboardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:tint="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_round_dashboard_24px"
+                tools:layout_conversion_absoluteHeight="62dp"
+                tools:layout_conversion_absoluteWidth="66dp"
+                tools:layout_conversion_wrapHeight="154"
+                tools:layout_conversion_wrapWidth="168" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:autoSizeTextType="uniform"
+                android:text="@string/suche"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/dashboardButton"
+                app:layout_constraintStart_toEndOf="@+id/dashboardButton"
+                app:layout_constraintTop_toTopOf="@+id/dashboardButton"
+                tools:layout_conversion_absoluteHeight="41dp"
+                tools:layout_conversion_absoluteWidth="314dp"
+                tools:layout_conversion_wrapHeight="144"
+                tools:layout_conversion_wrapWidth="194" />
+
+            <include
+                android:id="@+id/layout_logout"
+                layout="@layout/logout_button"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView7"
+                tools:layout_conversion_absoluteHeight="40dp"
+                tools:layout_conversion_absoluteWidth="16dp"
+                tools:layout_conversion_wrapHeight="140"
+                tools:layout_conversion_wrapWidth="112" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <SearchView
+        android:id="@+id/cow_search_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionSearch"
+        android:orientation="horizontal"
+        android:queryHint="@string/searchbox_cowsearch"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toStartOf="@+id/scan_barcode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarCowSearch">
+    </SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cow_search_box"
+        app:layout_constraintVertical_bias="0.437"
+        tools:listitem="@layout/recycler_view_item" />
+
+    <ImageButton
+        android:id="@+id/scan_barcode"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="@android:color/white"
+        android:baselineAlignBottom="true"
+        android:clickable="true"
+        android:contentDescription="Scan Barcode"
+        android:hapticFeedbackEnabled="true"
+        android:tint="@color/Gray"
+        android:tooltipText="Scan Barcode"
+        app:layout_constraintBottom_toBottomOf="@+id/cow_search_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cow_search_box"
+        app:srcCompat="@drawable/ic_baseline_photo_camera_24px" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

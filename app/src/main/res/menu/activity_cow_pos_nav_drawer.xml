@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/kuh_status">
+            <menu>
+<!--                <item
+                    android:id="@+id/nav_vorbrunst"
+                    android:icon="@drawable/nav_color_vorbrunst"
+                    android:title="@string/vorbrunst"
+                    app:backgroundTint="@color/colorPrimary"/>
+-->
+                <item
+                    android:id="@+id/nav_brunst"
+                    android:icon="@drawable/nav_color_brunst"
+                    android:iconTint="#4A848C"
+                    android:title="@string/brunst"
+                    tools:targetApi="o" />
+<!--                <item
+                    android:id="@+id/nav_nachbrunst"
+                    android:icon="@drawable/nav_color_nachbrunst"
+                    android:iconTint="#4A143C"
+                    android:iconTintMode="multiply"
+                    android:title="@string/nachbrunst"
+                    tools:targetApi="o" />
+-->
+                <item
+                    android:id="@+id/nav_gesund"
+                    android:icon="@drawable/nav_color_gesund"
+                    android:title="@string/gesund"
+                    tools:targetApi="o" />
+<!--
+                <item
+                    android:id="@+id/nav_krank"
+                    android:icon="@drawable/nav_color_krank"
+                    android:title="@string/krank" />
+-->
+                <item
+                    android:id="@+id/nav_reset"
+                    android:icon="@drawable/nav_color_reset"
+                    android:title="@string/filterReset" />
+            </menu>
+        </item>
+    </group>
+          <item android:title="More Filters">
+              <menu>
+                  <item
+                      android:id="@+id/nav_bookmarks"
+                      android:icon="@android:drawable/star_big_on"
+                      android:iconTint="#4A148C"
+                      android:title="@string/bookmarks" />
+              </menu>
+          </item>
+
+</menu>

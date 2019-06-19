@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#76B82A</color>
+    <color name="colorPrimaryDark">#6AA526</color>
+    <!--598242-->
+    <color name="colorAccent">#D81B60</color>
+    <color name="Gray">#616161</color>
+    <color name="LightGray">#efefef</color>>
+    <color name="Orange">@android:color/holo_orange_light</color>
+    <color name="Turquoise">#002BA0</color>
+</resources>

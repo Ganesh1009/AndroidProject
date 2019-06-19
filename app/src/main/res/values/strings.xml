@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">InnoCow</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email"><font size="12">Benutzername</font></string>
+    <string name="prompt_password"><font size="12">Passwort</font></string>
+    <string name="action_sign_in">LOGIN</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">Benutzername ist falsch</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">Passwort ist falsch</string>
+    <string name="error_field_required">Dieses Feld ist erforderlich</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."</string>
+    <string name="check_box">Angemeldet bleiben</string>
+    <string name="cow_search">Cow Search</string>
+    <string name="barn_id_alert_dialog">Wähle deinen Stall aus</string>
+    <string name="tag_waehlen">Sensor Wählen</string>
+    <string name="waehle_tag_fuer">Wähle Sensor für</string>
+    <string name="tag_nummer">Sensor-Nummer</string>
+    <string name="kuh_suche">KUH SUCHE</string>
+    <string name="tag_management">SENSOR MANAGEMENT</string>
+    <string name="tag_management_activity">Sensor Management</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="suche">Suche</string>
+    <string name="scanne_ohrmarke">Scanne Ohrmarke</string>
+    <string name="tag_scan">Sensor Scan</string>
+    <string name="tv_user_msg">Halte das Handy über den Sensor, welches an dieser Kuh angebracht werden soll.</string>
+    <string name="nfc">NFC</string>
+    <string name="barcode_suche">Barcode Suche</string>
+    <string name="title_activity_farm_map">Karte</string>
+    <string name="map">KARTE</string>
+    <string name="kuh_position">Kuh Position</string>
+    <string name="searchbox_cowsearch"><font size="16">Name/ Stall-Nr/ Sensor/ ID</font></string>
+    <string name="title_activity_cow_details_nav">CowDetailsNav</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="vorbrunst">Vorbrunst</string>
+    <string name="brunst">Brunst</string>
+    <string name="nachbrunst">Nachbrunst</string>
+    <string name="gesund">Gesund</string>
+    <string name="krank">Krank</string>
+    <string name="filterReset">Filter zurücksetzten</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bookmarks">Merkliste</string>
+    <string name="kuh_status">Kuh Status</string>
+</resources>

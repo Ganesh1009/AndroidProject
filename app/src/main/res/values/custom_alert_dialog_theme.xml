@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogCustom" parent="Base.V28.Theme.AppCompat.Light">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="colorSecondary">@android:color/white</item>
+        <item name="alertDialogStyle">@style/Theme.MaterialComponents.Light.NoActionBar</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowShowAnimation">@android:anim/fade_in</item>
+        <item name="android:windowHideAnimation">@android:anim/fade_out</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+        <item name="android:textColorAlertDialogListItem">@color/design_default_color_surface</item>
+
+    </style>
+</resources>
